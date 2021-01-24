@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="about">
+            <h1>kalkulator gabut</h1>
+            <p></p>
+        </div>
+        <!-- input dan hasil -->
+        <div class="hasil-dan-input">
+            <form>
+                <p>masukan nomer ke 1</p>
+                <input type="number" id="number1">
+                <p>masukan nomer ke 2</p>
+                <input type="number" id="number2">
+                <p>hasil</p>
+                <textarea id="hasil"></textarea>
+            </form>
+        </div>
+        <!-- operasi -->
+        <div class="pilih-operasi">
+            <h1>pilih operasi</h1>
+            <div class="operasi">
+                <button id="tambah" onclick="tambah()">tambah</button>
+                <button id="kurang" onclick="kurang()">kurang</button>
+                <button id="kali" onclick="kali()">kali</button>
+                <button id="bagi" onclick="bagi()">bagi</button>
+                <button id="clear" onclick="hapus()">hapus semua</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

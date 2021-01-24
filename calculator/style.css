@@ -1,0 +1,120 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body {
+    background-color: #E2DED1 ;
+    font-family: sans-serif ;
+}
+
+.container {
+    width: 500px ;
+    margin: 20px auto ;
+    margin-top: 60px ;
+    border: 1px solid #539DA9 ;
+    background-color: #97d0ff ;
+    color: #202931 ;
+    display: grid ;
+    grid-template-areas: "judul judul" "proses operasi";
+}
+
+.about {
+    display: flex ;
+    flex-direction: column ;
+    margin: 20px auto ;
+    width: 290px ;
+    text-align: center ;
+    grid-area: judul ;
+}
+
+.container .pilih-operasi {
+    display: flex ;
+    flex-direction: column ;
+    width: 290px ;
+    margin: auto ;
+    grid-area: operasi;
+}
+
+.container .pilih-operasi .operasi {
+    display: flex ;
+    flex-direction: column ;
+    margin: auto ;
+    width: 290px ;
+}
+
+.container .pilih-operasi h1 {
+    text-align: center ;
+    margin: 10px auto ;
+}
+
+#tambah ,#kurang ,#bagi ,#kali ,#clear {
+    width: 250px ;
+    margin: 10px auto ;
+    background-color: #539DA9 ;
+    border: none ;
+    cursor: pointer;
+    padding: 20px 0 ;
+}
+
+/* tambah section */
+.container .hasil-dan-input {
+    width : 250px ;
+    margin : 10px auto ;
+    margin-top: 60px ;
+    margin-left: -30px ;
+    grid-area: proses ;
+}
+
+.container .hasil-dan-input p {
+    text-align: center ;
+    margin: 10px auto ;
+    font-size: 18px ;
+}
+
+.container .hasil-dan-input form {
+    text-align: center ;
+}
+
+.container .hasil-dan-input input {
+    padding: 10px ;
+}
+
+.container .hasil-dan-input form textarea {
+    width: 123px ;
+    padding: 0 20px ;
+    height: 30px ;
+    margin: 10px auto ;
+    line-height: 30px ;
+    resize: none ;
+    font-size: 16px ;
+    margin-top: -6px ;
+}
+
+@media only screen and (max-width : 600px ){
+    .container {
+        width: 350px ;
+        display: flex ;
+        flex-direction: column ;
+    }
+
+    .container .pilih-operasi .operasi {
+        display: flex ;
+        margin: auto ;
+        width: 300px ;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+    }
+
+    .container .hasil-dan-input {
+        display: flex ;
+        margin: auto ;
+        margin-left: 85px ;
+    }
+
+    #tambah ,#kurang ,#bagi ,#kali ,#clear {
+        width: 125px ;
+        margin: 10px auto ;
+    }
+}
