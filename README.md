@@ -10,6 +10,8 @@ version 1.0
 
 # demo
 
+https://simple-calculator-ten.vercel.app/
+
 # screenshot
 dekstop version
 
